@@ -1,0 +1,162 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+li, a{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+
+.header{
+    display: flex;
+    align-items: center;
+    top: 0;
+    height: 70px;
+    justify-content: center;
+}
+
+.header_popup_btn{
+    position: fixed;
+    max-width: 170px;
+}
+
+.header_popup_btn button{
+    border: 0;
+    padding: 0;
+    background: transparent;
+    width: 100px;
+}
+
+
+
+.header_nav{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    left: 50%;
+}
+
+.header_nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.header_nav li{
+    padding-right: 30px;
+}
+
+.burger_icon{
+    max-width: 20%;
+    padding: 20px;
+}
+
+.close_popup{
+    justify-content: end;
+    display: flex;
+}
+
+
+#menu-main-menu a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.header_popup_btn{
+    display: none;
+}
+
+.sidebar{
+    align-items: center;
+    height: 100%;
+    width: 40%;
+    display: flex;
+    left: 0; top: 0;
+    position: fixed;
+    justify-content: center;
+    transition: 0.5s;
+    background-color: #fff;
+    z-index: 2;
+
+}
+
+.sidebar_closed{
+    transform: translateX(-100%);
+}
+
+.content section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.content-first-section{
+    background-color: #27ae60;
+}
+
+.content-second-section{
+    background-color: #fbc531;
+}
+
+.content-third-section{
+    background-color: #e84118;
+}
+
+.content-fourth-section{
+    background-color: #00a8ff;
+}
+
+.content-fifth-section{
+    background-color: #353b48;
+}
+
+.block_scroll{
+    overflow: hidden;
+}
+
+.menu-main-menu-container{
+    height: 100%;
+}
+
+#menu-main-menu{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+@media(max-width: 767px) {
+    .header{
+        display: none;
+    }
+    .header_popup_btn{
+        display: flex;
+    }
+    .header{
+        justify-content: start;
+    }
+    .header_popup_btn_closed{
+        transition: 0.5s;
+        opacity: 0;
+    }
+}
